@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>swatches</title>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".sixteen").click(function(){
+        $(".clickedsixteen").addClass("show");
+        $(".clickedfifteen").removeClass("show");
+        $(".clickedfourteen").removeClass("show");
+        $(".clickedthirteen").removeClass("show");
+      });
+
+      $(".fifteen").click(function(){
+        $(".clickedfifteen").addClass("show");
+        $(".clickedfourteen").removeClass("show");
+        $(".clickedsixteen").removeClass("show");
+        $(".clickedthirteen").removeClass("show");
+      });
+
+      $(".fourteen").click(function(){
+        $(".clickedfourteen").addClass("show");
+        $(".clickedfifteen").removeClass("show");
+        $(".clickedsixteen").removeClass("show");
+        $(".clickedthirteen").removeClass("show");
+      });
+
+      $(".thirteen").click(function(){
+        $(".clickedthirteen").addClass("show");
+        $(".clickedfifteen").removeClass("show");
+        $(".clickedfourteen").removeClass("show");
+        $(".clickedsixteen").removeClass("show");
+      });
+    });
+  </script>
+  <style>
+
+  body {
+    margin-left: 0px;
+  }
+  h3 {
+    font-family: helvetica, arial, sans-serif;
+  }
+
+  .sixteen a img{
+    display:block;
+    height: 300px;
+    width: 300px;
+    -webkit-transition-property: width;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
+  }
+
+  .sixteen a img:hover {
+    width: 100%;
+  }
+
+  .fifteen a img{
+    display:block;
+    height: 300px;
+    width: 300px;
+    -webkit-transition-property: width;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
+  }
+
+  .fifteen a img:hover {
+    width: 100%;
+  }
+
+  .fourteen a img{
+    display:block;
+    height: 300px;
+    width: 300px;
+    -webkit-transition-property: width;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
+  }
+
+  .fourteen a img:hover {
+    width: 100%;
+  }
+
+  .thirteen a img{
+    display:block;
+    height: 300px;
+    width: 300px;
+    -webkit-transition-property: width;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
+  }
+
+  .thirteen a img:hover {
+    width: 100%;
+  }
+
+  .clickedsixteen {
+    font-family: monospace;
+    text-align: right;
+    display:none;
+  }
+
+  .clickedfifteen {
+    font-family: monospace;
+    text-align: right;
+    display:none;
+  }
+
+  .clickedfourteen {
+    font-family: monospace;
+    text-align: right;
+    display:none;
+  }
+
+  .clickedthirteen {
+    font-family: monospace;
+    text-align: right;
+    display:none;
+  }
+
+  .show {
+    display:block;
+  }
+
+  .header {
+    font-family: monospace;
+    text-align: right;
+  }
+
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>PANTONE</h1>
+    <h3>color of the year swatches</h3>
+  </div>
+  
+  <div class="colorsixteen">
+    <h3>2016</h3>
+    <section class="sixteen">
+      <a href="#"><img src="https://i.gyazo.com/b495a9726bda0e3363a9262022616273.png"/></a>
+    </section>
+    <section class="clickedsixteen">
+      <h4>serenity</h4>
+    </section>
+  </div>
+
+  <div class="colorfifteen">
+    <h3>2015</h3>
+    <section class="fifteen">
+      <a href="#"><img src="https://i.gyazo.com/fb66671453dac89f0d85cf65a224f5cb.png"/></a>
+    </section>
+    <section class="clickedfifteen">
+      <h4>marsala</h4>
+    </section>
+  </div>
+
+  <div class="colorfourteen">
+    <h3>2014</h3>
+    <section class="fourteen">
+      <a href="#"><img src="https://i.gyazo.com/3b48dcd64dfa63d2e45f63e30dbfed48.png"/></a>
+    </section>
+    <section class="clickedfourteen">
+      <h4>radiant orchid</h4>
+    </section>
+  </div>
+
+  <div class="colorthirteen">
+    <h3>2013</h3>
+    <section class="thirteen">
+      <a href="#"><img src="https://i.gyazo.com/49890ef6fca4dc41ebd859604d93ad94.png"/></a>
+    </section>
+    <section class="clickedthirteen">
+      <h4>emerald</h4>
+    </section>
+  </div>
+
+</body>
